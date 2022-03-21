@@ -70,9 +70,10 @@ usage:
 </pre>
 Example
 
-``
- sudo bash recover_c_file.sh --help --string "a string" --dev "/dev/sda1" \
-	--pre 50 --post 100 --matches 5 --output-dir /tmp --output-file recovered.c.txt
+```
+sudo bash recover_c_file.sh --help --string "a string" --dev "/dev/sda1" \
+           --pre 50 --post 100 --matches 5 \
+           --output-dir /tmp --output-file recovered.c.txt
 ```
 
 ## Authors
