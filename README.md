@@ -34,9 +34,9 @@ what happened and don't save a bunch of stuff to disk in between.
 
 ### Usage
 <pre>
-usage: <sudo> recover_c_file.sh options
+usage: 
 
-   sudo  bash  recover_c_file.sh   <options>
+   sudo recover_c_file.sh --string "string" --dev <device> --output-dir "dir" --output-file "recovered.txt" 
 
    (must be run as super-user to read device)
 
@@ -62,14 +62,16 @@ usage: <sudo> recover_c_file.sh options
 	  Search the device you specify
 	  and create a file called 'recovered.txt'
 	  preferrably on another file system.
-	  The recovered file will contain:
+	  he recovered file will contain:
 	  50 lines pre-match, matching line, 100 lines post-match.
 	  repeats 5 times, appending.
 
-</pre>
 
-```
-sudo bash recover_c_file.sh --help --string "a string" --dev "/dev/sda1" \
+</pre>
+Example
+
+``
+ sudo bash recover_c_file.sh --help --string "a string" --dev "/dev/sda1" \
 	--pre 50 --post 100 --matches 5 --output-dir /tmp --output-file recovered.c.txt
 ```
 
