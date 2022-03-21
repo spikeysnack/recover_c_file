@@ -17,16 +17,23 @@ what happened and don't save a bunch of stuff to disk in between.
 
 ### Dependencies
 
-* getopt findmnt nice tr pv grep strings
+* getopt 
+* findmnt 
+* nice 
+* tr 
+* pv 
+* grep 
+* strings
  
   getopt, findmnt, and pv are standard linux utiltities that can
   be installed in your linux distro.
   
 ### Installing
 
-* just run it with bash, or make it executable and run it.
+* Run it with bash, or make it executable and run it.
 
 ### Usage
+<pre>
 usage: <sudo> recover_c_file.sh options
 
    sudo  bash  recover_c_file.sh   <options>
@@ -59,6 +66,7 @@ usage: <sudo> recover_c_file.sh options
 	  50 lines pre-match, matching line, 100 lines post-match.
 	  repeats 5 times, appending.
 
+</pre>
 
 ```
 sudo bash recover_c_file.sh --help --string "a string" --dev "/dev/sda1" \
@@ -84,7 +92,7 @@ This project is licensed under the Creative Commons License. - see the LICENSE.m
 [stackexchange.com](https://unix.stackexchange.com/questions/149342/can-overwritten-files-be-recovered)
 
 for:
-
+<pre>
 nice                	David MacKenzie     	GNU GPL 2.0 free software
 
 tr                  	Jim Meyering        	GNU GPL 2.0 free software
@@ -99,5 +107,5 @@ pv                  	Andrew Wood         	ARTISTIC 2.0 free software
 
 fimdmnt             	Karel Zak           	GNU GPL 2.0 free software
 
-
+</pre>
 
