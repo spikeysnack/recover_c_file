@@ -740,9 +740,9 @@ check_separate_mount_points()
 	# >&2 echo  "${dev}     mount1: ${mount1}"
 	# >&2 echo  "${outfile} mount2: ${mount2}"
 
-
-	if [ "X${mount1}" == "X${mount2}" ] ;then
-		same_mount=1
+	# no not on same partition
+	if [ "X${mount1}" != "X${mount2}" ] ;then
+		return 0
 	fi
 
 	cat <<EOF
